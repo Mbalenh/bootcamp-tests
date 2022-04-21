@@ -1,20 +1,15 @@
 describe("The isWeekday function" , function(){
-    it("should the day of week be 'Monday'" , function(){
+    it("should return true , if the the day is on the week" , function(){
         assert.equal(isWeekday('Monday'), true);
     });
-    it("should not be the day of week be 'Saturday'" , function(){
+    it("should return false. if the day is on the weekend" , function(){
         assert.equal(isWeekday('Saturday'), false);
     });
-    it("should not be the day of week be 'Sunday'" , function(){
+    it("return false. if the day is on the weekend which is 'Sunday'" , function(){
         assert.equal(isWeekday('Sunday'), false);
     });
-    it("should the day of week be 'Thursday'" , function(){
+    it("hould return true , if the the day is on the week" , function(){
         assert.equal(isWeekday('Thursday'), true);
-
-    });
-
-    it("should the day of week be ''" , function(){
-        assert.equal(isWeekday(''), false);
 
     });
 

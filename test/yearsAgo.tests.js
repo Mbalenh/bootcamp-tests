@@ -1,19 +1,14 @@
 describe("The yearsAgo function" , function(){
-    it("should be able to calculate the how many years ago that year is from the current year" , function(){
-        assert.equal((new Date().getFullYear() - 1976), yearsAgo(1976)); 
+    it("should  return how many years ago 1964 is from the current year." , function(){
+        assert.equal(58, yearsAgo(1964)); 
     });
-    it("should be able to calculate the how many years ago that year is from the current year" , function(){
-        assert.equal((new Date().getFullYear() - 1970), yearsAgo(1970)); 
+    it("should  return how many years ago that 1970 is from the current year." , function(){
+        assert.equal(52, yearsAgo(1970)); 
     });
-    it("should be able to calculate the how many years ago that year is from the current year" , function(){
-        assert.equal((new Date().getFullYear() - 2000), yearsAgo(2000)); 
+    it("should  return how many years ago that 2000 is from the current year." , function(){
+        assert.equal(22, yearsAgo(2000)); 
     });
-    it("should be able to calculate the how many years ago that year is from the current year" , function(){
-        assert.equal((new Date().getFullYear() - 2), yearsAgo(2)); 
+    it(" return how many years ago that 2020 is from the current year." , function(){
+        assert.equal(2, yearsAgo(2020)); 
     });
-
-    it("should be able to calculate the how many years ago that year is from the current year" , function(){
-        assert.equal((new Date().getFullYear() - ''), yearsAgo('')); 
-    });
-
-});
+})

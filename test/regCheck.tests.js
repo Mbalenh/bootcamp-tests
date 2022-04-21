@@ -1,17 +1,17 @@
 describe("The regCheck function", function(){
-    it("should the regNums.endsWith(regEnd)" , function(){
+    it("should return true if the regNums endsWith(regEnd)" , function(){
         assert.equal(regCheck('DC 55 YU GP', 'GP'), true);
     });
-    it("should the regNums.endsWith(L)" , function(){
+    it("should return true if the regNums endsWith(regEnd)" , function(){
         assert.equal(regCheck('5566 L', 'L'), true);
     });
-    it("The registration number should not end with 'M'" , function(){
+    it("should return false if the regNums endsWith(regEnd) is not the same as the regEnd" , function(){
         assert.equal(regCheck('5566 L', 'M'), false);
     });
-    it("should the regNums.endsWith()" , function(){
+    it("should return false if the regNums is empty" , function(){
         assert.equal(isFromBellville(''), false)
     });
-    it("should not the regNums.endsWith(ND 123-456)" , function(){
+    it("should return false if the regNums  does not have regEnd " , function(){
         assert.equal(isFromBellville('ND 123-456'), false)
     });
 });
