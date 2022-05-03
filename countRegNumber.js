@@ -1,13 +1,11 @@
 function countRegNumber(regNums){
     let regArray = regNums.split(',');
     let countReg= 0;
-    for(var i=0;i<regArray.length;i++){
-      const reg =regArray[i].trim();
+    for(var i=0; i< regArray.length; i++){
+      const reg = regArray[i].trim();
       if(regNums.startsWith(regNums)){
          countReg++
-         }else{
-           return 'error'
-         }
-         }
-         return countReg;
-        }
+    } 
+ }
+    return countReg;
+  }
